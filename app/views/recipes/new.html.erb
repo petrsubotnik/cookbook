@@ -13,5 +13,17 @@
     <%= r.label :image %>
     <%= r.text_field :image %>
   </p>
+  <p>
+    <%= r.label :cooking_time %>
+    <%= r.text_field :cooking_time, placeholder: "Enter in minutes" %>
+  </p>
+  <p>
+    <%= r.label :preping_time %>
+    <%= r.text_field :preping_time, placeholder: "Enter in minutes" %>
+  </p>
+  <p>
+    <%= r.label :servings %>
+    <%= r.text_field :servings, placeholder: "Number of people" %>
+  </p>
   <%= r.submit %>
 <%end%>
