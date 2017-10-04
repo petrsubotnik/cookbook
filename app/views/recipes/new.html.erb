@@ -1,0 +1,17 @@
+<%= form_for @recipe do |r|%>
+<select name="recipe[food_category_id]">
+  <% @food_categories.each do |fc| %>
+    <option value="<%= fc.id %>"><%= fc.name %></option>
+  <% end %>
+</select>
+
+  <p>
+    <%= r.label :name %>
+    <%= r.text_field :name %>
+  </p>
+  <p>
+    <%= r.label :image %>
+    <%= r.text_field :image %>
+  </p>
+  <%= r.submit %>
+<%end%>

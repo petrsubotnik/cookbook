@@ -1,7 +1,11 @@
+<%= link_to "Home", root_path %>
+
 <h1><%= @food_category.name %></h1>
+
+<%= link_to "New Recipe", new_recipe_path %>
 
 <ul>
   <% @food_category.recipes.each do |fr| %>
-    <li><%= fr.name %></li>
+    <li><%= link_to fr.name, recipe_path(fr.id) %></li>
   <%end%>
 </ul>
