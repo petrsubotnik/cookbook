@@ -1,0 +1,7 @@
+<h1><%= @food_category.name %></h1>
+
+<ul>
+  <% @food_category.recipes.each do |fr| %>
+    <li><%= fr.name %></li>
+  <%end%>
+</ul>

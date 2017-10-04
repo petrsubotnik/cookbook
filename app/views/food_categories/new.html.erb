@@ -1,0 +1,11 @@
+<%= form_for @food_category do |fc|%>
+  <p>
+    <%= fc.label :name %>
+    <%= fc.text_field :name %>
+  </p>
+  <p>
+    <%= fc.label :image %>
+    <%= fc.text_field :image %>
+  </p>
+  <%= fc.submit %>
+<%end%>
