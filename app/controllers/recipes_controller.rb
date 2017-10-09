@@ -2,14 +2,14 @@ class RecipesController < ApplicationController
   def new
     @recipe = Recipe.new
     @food_categories = FoodCategory.all
-
   end
 
   def create
     @food_categories = FoodCategory.all
     @recipe = Recipe.new(clean_params)
+
     if @recipe.save
-      redirect_to food_category_path(@recipe.food_category_id)
+      redirect_to new_ingredient_path(recipe_id: @recipe.id)
     else
       render :new
     end

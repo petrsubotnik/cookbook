@@ -7,3 +7,17 @@
 <p>Preping time: <%= @recipe.preping_time %> minutes</p>
 <p>Cooking time: <%= @recipe.cooking_time %> minutes</p>
 <p>Serves: <%= @recipe.servings %> people</p>
+
+<h3>Ingredients</h3>
+  <ul>
+    <% @recipe.ingredients.each do |i| %>
+      <li><%= i.quantity %> <%= i.food_item.name %></li>
+    <% end %>
+  </ul>
+
+<h3>Directions</h3>
+  <ol>
+    <% @recipe.directions.each do |d| %>
+      <li><%= d.instruction %></li>
+    <% end %>
+  </ol>

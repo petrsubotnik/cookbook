@@ -4,5 +4,7 @@ Rails.application.routes.draw do
   root "food_categories#index"
   resources :food_categories
   resources :recipes
+  resources :ingredients, only: [:new]
+  post "/ingredients/new", to: "ingredients#create"
 
 end
