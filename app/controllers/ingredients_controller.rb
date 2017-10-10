@@ -6,9 +6,11 @@ class IngredientsController < ApplicationController
 
   def create
     params[:ingredients].each do |i|
-      food_item = FoodItem.find_or_create_by(name: i[:name])
-      @recipe = Recipe.find(params[:recipe_id]) # need both food item and recipe references create new ingredients
-      @ingredients = Ingredient.create(quantity: i[:quantity],     food_item_id: food_item.id, recipe_id: @recipe.id)
+      if i[:quantity].present? && i[:name].present?
+        food_item = FoodItem.find_or_create_by(name: i[:name])
+        @recipe = Recipe.find(params[:recipe_id])
+        @ingredients = Ingredient.create(quantity: i[:quantity], food_item_id: food_item.id, recipe_id: @recipe.id)
+      end
     end
     if @ingredients.save
       redirect_to new_direction_path(recipe_id: @recipe.id)
@@ -16,6 +18,7 @@ class IngredientsController < ApplicationController
       render :new
     end
   end
+
 
 
   private
