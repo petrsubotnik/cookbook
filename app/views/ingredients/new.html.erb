@@ -15,6 +15,33 @@
         </p>
       </p>
     </div>
-<p>
-  <input type="submit" value="Next"/>
-</p>
+    <p>
+      <input type="submit" value="Next"/>
+    </p>
+
+
+<a href="#" id="add_ingredient">More +</a>
+ <div id="hidden_inputs" style="display: none;">
+   <div id="ingredient_inputs">
+     <p>
+       <p>
+         <label>Quantity</label>
+         <input type="text" name="ingredients[][quantity]" />
+       </p>
+
+       <p>
+         <label>Item</label>
+         <input type="text" name="ingredients[][name]" />
+       </p>
+     </p>
+   </div>
+ </div>
+ <script>
+   $(document).ready(function(){
+     $("#add_ingredient").on("click", function(e){
+       e.preventDefault();
+       var inputs = $("#hidden_inputs").html();
+       $("#ingredient_inputs").append(inputs);
+     })
+   });
+ </script>

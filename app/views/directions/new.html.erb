@@ -1,18 +1,45 @@
-<h2>How do you make it? Add the directions</h2>
-  <%= form_tag new_direction_path, method: "post" %>
-    <input type="hidden" name="recipe_id" value="<%= params[:recipe_id] %>" />
-    <div id="direction_inputs">
-      <p>
-        <p>
-          <label>Step</label>
-          <input type="text" name="directions[][step]"/>
-        </p>
-        <p>
-          <label>Instruction</label>
-          <input type="text" name="directions[][instruction]"/>
-        </p>
-      </p>
-    </div>
+<h2>Add the directions</h2>
+
+<%= form_tag new_direction_path, method: "post" %>
+  <input type="hidden" name="recipe_id" value="<%= params[:recipe_id] %>" />
+  <div id="direction_inputs">
     <p>
-      <input type="submit" value="Submit"/>
+      <p>
+        <label>Step</label>
+        <input type="text" name="directions[][step]"/>
+      </p>
+      <p>
+        <label>Instruction</label>
+        <input type="text" name="directions[][instruction]"/>
+      </p>
     </p>
+  </div>
+  <p>
+    <input type="submit" value="Submit"/>
+  </p>
+
+<a href="#" id="add_direction">Add More Directions</a>
+<div id="hidden_inputs" style="display: none">
+  <div id="direction_inputs">
+    <p>
+      <p>
+        <label>Step</label>
+        <input type="text" name="directions[][step]"/>
+      </p>
+      <p>
+        <label>Instruction</label>
+        <input type="text" name="directions[][instruction]"/>
+      </p>
+    </p>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function(){
+    $("#add_direction").on("click", function(e){
+      e.preventDefault();
+      var inputs = $("#hidden_inputs").html();
+      $("#direction_inputs").append(inputs);
+    })
+  });
+</script>
