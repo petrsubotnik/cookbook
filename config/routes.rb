@@ -6,5 +6,7 @@ Rails.application.routes.draw do
   resources :recipes
   resources :ingredients, only: [:new]
   post "/ingredients/new", to: "ingredients#create"
+  resources :directions, only: [:new]
+  post "/directions/new", to: "directions#create"
 
 end

@@ -1,0 +1,18 @@
+<h2>How do you make it? Add the directions</h2>
+  <%= form_tag new_direction_path, method: "post" %>
+    <input type="hidden" name="recipe_id" value="<%= params[:recipe_id] %>" />
+    <div id="direction_inputs">
+      <p>
+        <p>
+          <label>Step</label>
+          <input type="text" name="directions[][step]"/>
+        </p>
+        <p>
+          <label>Instruction</label>
+          <input type="text" name="directions[][instruction]"/>
+        </p>
+      </p>
+    </div>
+    <p>
+      <input type="submit" value="Submit"/>
+    </p>

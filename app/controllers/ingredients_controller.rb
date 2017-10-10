@@ -11,7 +11,7 @@ class IngredientsController < ApplicationController
       @ingredients = Ingredient.create(quantity: i[:quantity],     food_item_id: food_item.id, recipe_id: @recipe.id)
     end
     if @ingredients.save
-      redirect_to root_path
+      redirect_to new_direction_path(recipe_id: @recipe.id)
     else
       render :new
     end
