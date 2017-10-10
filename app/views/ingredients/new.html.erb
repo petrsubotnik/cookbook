@@ -1,1 +1,20 @@
 <h2>Add the ingredients</h2>
+
+<%= form_tag new_ingredient_path, method: "post" %>
+    <input type="hidden" name="recipe_id" value="<%= params[:recipe_id] %>" />
+    <div id="ingredient_inputs">
+      <p>
+        <p>
+          <label>Quantity</label>
+          <input type="text" name="ingredients[][quantity]" />
+        </p>
+
+        <p>
+          <label>Item</label>
+          <input type="text" name="ingredients[][name]" />
+        </p>
+      </p>
+    </div>
+<p>
+  <input type="submit" value="Next"/>
+</p>
