@@ -9,6 +9,12 @@ class FoodCategoriesController < ApplicationController
 
   def create
     @food_category = FoodCategory.new(clean_params)
+
+    if params[:file].present?
+      req = Cloudinary::Uploader.upload(params[:file])
+      @food_category.image = req["public_id"]
+    end
+
     if @food_category.save
       redirect_to root_path
     else
