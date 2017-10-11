@@ -1,4 +1,5 @@
-<%= form_for @food_category do |fc|%>
+
+<%= form_for(@food_category, :html => {:multipart => true}) do |fc| %>
   <p>
     <%= fc.label :name %>
     <%= fc.text_field :name %>
