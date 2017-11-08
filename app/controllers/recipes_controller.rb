@@ -24,6 +24,26 @@ class RecipesController < ApplicationController
     @recipe = Recipe.find(params[:id])
   end
 
+  def edit
+    @recipe = Recipe.find(params[:id])
+  end
+
+  def update
+    @recipe = Recipe.find(params[:id])
+
+    if params[:file].present?
+       req = Cloudinary::Uploader.upload(params[:file])
+       @recipe.image = req["public_id"]
+     end
+
+    if @recipe.update_attributes(clean_params)
+      redirect_to recipe_path(@recipe)
+    else
+      render :edit
+    end
+  end
+
+
   private
 
   def clean_params

@@ -1,0 +1,27 @@
+<%= form_for @recipe, :html => {:multipart => true}  do |r|%>
+
+  <p>
+    <%= r.label :name %>
+    <%= r.text_field :name %>
+  </p>
+  <p>
+    <%= r.label :image %>
+    <%= r.text_field :image, placeholder: "paste image url" %>
+  </p>
+  <p>
+    <%= r.label :cooking_time %>
+    <%= r.text_field :cooking_time, placeholder: "Enter in minutes" %>
+  </p>
+  <p>
+    <%= r.label :preping_time %>
+    <%= r.text_field :preping_time, placeholder: "Enter in minutes" %>
+  </p>
+  <p>
+    <%= r.label :servings %>
+    <%= r.text_field :servings, placeholder: "Number of people" %>
+  </p>
+
+  <p>
+    <%= r.submit "Save" %>
+  </p>
+<%end%>
