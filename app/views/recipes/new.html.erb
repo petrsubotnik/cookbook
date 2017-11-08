@@ -1,7 +1,7 @@
 <%= form_for(@recipe, :html => {:multipart => true}) do |r| %>
 
 <p>
-  <%= r.label "Baking Category" %>
+  <%= r.label "Food Category" %>
     <select name="recipe[food_category_id]">
       <% @food_categories.each do |fc| %>
         <option value="<%= fc.id %>"><%= fc.name %></option>
@@ -15,7 +15,7 @@
   </p>
   <p>
     <%= r.label :image %>
-    <%= r.cl_image_upload :image %>
+    <%= r.text_field :image, placeholder: "paste image url" %>
   </p>
   <p>
     <%= r.label :cooking_time %>

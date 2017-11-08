@@ -6,7 +6,7 @@
   </p>
   <p>
     <%= fc.label :image %>
-    <%= fc.cl_image_upload :image %>
+    <%= fc.text_field :image, placeholder: "paste image url" %>
   </p>
   <%= fc.submit %>
 <%end%>
