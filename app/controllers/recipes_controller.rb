@@ -37,7 +37,7 @@ class RecipesController < ApplicationController
      end
 
     if @recipe.update_attributes(clean_params)
-      redirect_to recipe_path(@recipe)
+      redirect_to new_ingredient_path(recipe_id: @recipe.id)
     else
       render :edit
     end
