@@ -35,3 +35,16 @@
   color: white;
   text-align: center;
 }
+
+.footer {
+  margin-top: 60px;
+  background-color: black;
+  text-align: center;
+}
+
+.card2, .card3 {
+  display: inline;
+}
+.card-text {
+  margin-top: 15px;
+}
