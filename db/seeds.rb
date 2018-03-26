@@ -12,17 +12,17 @@ FoodItem.destroy_all
 Ingredient.destroy_all
 Direction.destroy_all
 
-f1 = FoodCategory.create(name: "Soup", image: "goulash_soup_rnmb2g.jpg")
-f2 = FoodCategory.create(name: "Pasta", image: "rigatoni_obkv3f.jpg")
-f3 = FoodCategory.create(name: "Meat", image: "goulash_jvel5s.jpg")
-f4 = FoodCategory.create(name: "Seafood & Fish", image: "fishtray_v35fa6.jpg")
-f5 = FoodCategory.create(name: "Light Snacks", image: "Bruschetta_yyy6yu.jpg")
-f6 = FoodCategory.create(name: "Desserts", image: "Bannoffee-Pie_aiop4c.jpg")
+f1 = FoodCategory.create(name: "Soup", image: "http://res.cloudinary.com/dsgd2hpbg/image/upload/v1509427537/goulash_soup_rnmb2g.jpg")
+f2 = FoodCategory.create(name: "Pasta", image: "http://res.cloudinary.com/dsgd2hpbg/image/upload/v1509427897/rigatoni_obkv3f.jpg")
+f3 = FoodCategory.create(name: "Meat", image: "http://res.cloudinary.com/dsgd2hpbg/image/upload/v1509427940/goulash_jvel5s.jpg")
+f4 = FoodCategory.create(name: "Seafood & Fish", image: "http://res.cloudinary.com/dsgd2hpbg/image/upload/v1522043699/fishtray_v35fa6.jpg")
+f5 = FoodCategory.create(name: "Light Snacks", image: "http://res.cloudinary.com/dsgd2hpbg/image/upload/v1522043673/Bruschetta_yyy6yu.jpg")
+f6 = FoodCategory.create(name: "Desserts", image: "http://res.cloudinary.com/dsgd2hpbg/image/upload/v1522043662/Bannoffee-Pie_aiop4c.jpg")
 
-r1 = Recipe.create(name: "Goulash soup", image: "https://www.toprecepty.cz/fotky/recepty/0058/2c482d10e5faa7ff4720ccc9766b7f5e-facebook.jpg", food_category_id: f1.id, cooking_time: 20, preping_time: 20, servings: 4)
+r1 = Recipe.create(name: "Goulash soup", image: "goulash_soup_rnmb2g.jpg", food_category_id: f1.id, cooking_time: 20, preping_time: 20, servings: 4)
 r2 = Recipe.create(name: "Potato soup", image: "http://fresh.iprima.cz/sites/default/files/image_crops/image_620x349/b/390851_sedlacka-bramboracka_image_620x349.jpg", food_category_id: f1.id, cooking_time: 20, preping_time: 20, servings: 4)
-r3 = Recipe.create(name: "Oven-baked rigatoni with wild boar salami", image: "https://cdn.jamieoliver.com/recipe-database/oldImages/xtra_med/370_1_1439304364.jpg", food_category_id: f2.id, cooking_time: 25, preping_time: 30, servings: 6)
-r4 = Recipe.create(name: "Beef Goulash", image: "https://i.pinimg.com/originals/64/fc/5e/64fc5e04fd04859e16ca9e86497ab83a.jpg", food_category_id: f3.id, cooking_time: 60, preping_time: 40, servings: 4)
+r3 = Recipe.create(name: "Oven-baked rigatoni with wild boar salami", image: "rigatoni_obkv3f.jpg", food_category_id: f2.id, cooking_time: 25, preping_time: 30, servings: 6)
+r4 = Recipe.create(name: "Beef Goulash", image: "goulash_jvel5s.jpg", food_category_id: f3.id, cooking_time: 60, preping_time: 40, servings: 4)
 
 fi1 = FoodItem.create(name: "beef")
 fi2 = FoodItem.create(name: "onion")

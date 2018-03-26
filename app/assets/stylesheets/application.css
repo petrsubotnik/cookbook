@@ -19,7 +19,7 @@
 }
 
 .jumbotron {
-  background-image: url("/assets/image.png");
+  background-image: url("http://res.cloudinary.com/dsgd2hpbg/image/upload/v1522043439/image_lftuhx.jpg");
   background-size: cover;
   height: 400px;
 }
