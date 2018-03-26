@@ -12,12 +12,12 @@ FoodItem.destroy_all
 Ingredient.destroy_all
 Direction.destroy_all
 
-f1 = FoodCategory.create(name: "Soup", image: "soup.jpg")
-f2 = FoodCategory.create(name: "Pasta", image: "soup.jpg")
-f3 = FoodCategory.create(name: "Meat", image: "soup.jpg")
-f4 = FoodCategory.create(name: "Seafood & Fish", image: "soup.jpg")
-f5 = FoodCategory.create(name: "Light Snacks", image: "soup.jpg")
-f6 = FoodCategory.create(name: "Desserts", image: "soup.jpg")
+f1 = FoodCategory.create(name: "Soup", image: "https://www.toprecepty.cz/fotky/recepty/0058/2c482d10e5faa7ff4720ccc9766b7f5e-facebook.jpg")
+f2 = FoodCategory.create(name: "Pasta", image: "https://cdn.jamieoliver.com/recipe-database/oldImages/xtra_med/370_1_1439304364.jpg")
+f3 = FoodCategory.create(name: "Meat", image: "https://i.pinimg.com/originals/64/fc/5e/64fc5e04fd04859e16ca9e86497ab83a.jpg")
+f4 = FoodCategory.create(name: "Seafood & Fish", image: "/assets/fishtray.jpg")
+f5 = FoodCategory.create(name: "Light Snacks", image: "/assets/Bruschetta.jpg")
+f6 = FoodCategory.create(name: "Desserts", image: "/assets/Bannoffee-Pie.jpg")
 
 r1 = Recipe.create(name: "Goulash soup", image: "https://www.toprecepty.cz/fotky/recepty/0058/2c482d10e5faa7ff4720ccc9766b7f5e-facebook.jpg", food_category_id: f1.id, cooking_time: 20, preping_time: 20, servings: 4)
 r2 = Recipe.create(name: "Potato soup", image: "http://fresh.iprima.cz/sites/default/files/image_crops/image_620x349/b/390851_sedlacka-bramboracka_image_620x349.jpg", food_category_id: f1.id, cooking_time: 20, preping_time: 20, servings: 4)

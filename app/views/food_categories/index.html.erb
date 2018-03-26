@@ -1,10 +1,32 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">The Coolest Cookbook Ever!</h1>
+    <p class="lead">Bronwyn's and Petr's recipes</p>
+  </div>
+</div>
 
-<h1>Cookbook</h1>
+<!-- <button type="button" class="btn btn-outline-dark"><%= link_to "New Food Category", new_food_category_path %></button> -->
 
-<%= link_to "New Food Category", new_food_category_path %>
-
-<ul>
+<!-- <ul>
   <% @food_categories.each do |fc| %>
     <li><%= link_to fc.name, food_category_path(fc.id) %></li>
   <%end%>
-</ul>
+</ul> -->
+
+
+<div class="card-deck">
+
+<% @food_categories.each do |fc| %>
+
+  <div class="card">
+    <%= link_to food_category_path fc do %>
+    <%= cl_image_tag fc.image, class: "img-fluid country-thumb" %>
+    <% end %>
+    <div class="card-body">
+      <h5 class="card-title"><%= fc.name %></h5>
+    </div>
+  </div>
+
+  <%end%>
+
+</div>
