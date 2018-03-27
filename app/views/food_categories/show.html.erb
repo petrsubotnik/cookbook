@@ -30,7 +30,7 @@
 
   <% @food_category.recipes.each do |fr| %>
 
-    <div class="card">
+    <div class="card-recipe">
       <div class="row ">
         <div class="col-md-4">
           <%= link_to recipe_path fr do %>
@@ -40,11 +40,15 @@
           <div class="col-md-8 px-3">
             <div class="card-block px-3">
               <h2 class="card-title"><%= fr.name %></h2>
-
-              <h5 class="card2"><p class="card3">Cooking time: </p><%= fr.cooking_time %></h5>
-              <h5 class="card2"><p class="card3">Preping time: </p><%= fr.preping_time %></h5>
-              <h5 class="card2"><p class="card3">Serves: </p><%= fr.servings %></h5>
-
+              <div class="card-info1">
+                <h5 class="card2"><p class="card3">Cooking time: </p><%= fr.cooking_time %></h5>
+              </div>
+              <div class="card-info1">
+                <h5 class="card2"><p class="card3">Preping time: </p><%= fr.preping_time %></h5>
+              </div>
+              <div class="card-info1">
+                <h5 class="card2"><p class="card3">Serves: </p><%= fr.servings %></h5>
+              </div>
               <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
           </div>
