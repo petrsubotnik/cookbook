@@ -42,6 +42,26 @@
   text-align: center;
 }
 
+.social-media {
+  display: inline;
+  margin: 20px;
+}
+/*index page*/
+
+.img-fluid {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 300px;
+}
+
+.card-title{
+  text-align: center;
+}
+
+/*show page*/
+
 .card2, .card3 {
   display: inline;
 }
@@ -54,19 +74,18 @@
   margin-right: 20px;
 }
 
-.social-media {
-  display: inline;
-  margin: 20px;
-}
-
-.img-fluid {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.img-show {
   width: 300px;
   height: 300px;
+  margin: 30px;
 }
 
-.card-title{
-  text-align: center;
+.card-title {
+  float: left;
+  font-size: 60px;
+}
+
+.row {
+  border: solid 1px black;
+  margin: 20px 150px 20px 150px;
 }
