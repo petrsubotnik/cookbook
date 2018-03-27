@@ -58,3 +58,15 @@
   display: inline;
   margin: 20px;
 }
+
+.img-fluid {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 300px;
+}
+
+.card-title{
+  text-align: center;
+}

@@ -12,20 +12,25 @@
   <%end%>
 </ul> -->
 
+<div class="container-fluid">
+  <div class="row">
 
-<div class="card-deck">
+  <% @food_categories.each do |fc| %>
 
-<% @food_categories.each do |fc| %>
+  <div class="col-md-4">
 
-  <div class="card">
-    <%= link_to food_category_path fc do %>
-    <%= cl_image_tag fc.image, class: "img-fluid country-thumb" %>
-    <% end %>
-    <div class="card-body">
-      <h5 class="card-title"><%= fc.name %></h5>
+    <div class="card-index">
+      <%= link_to food_category_path fc do %>
+      <%= cl_image_tag fc.image, class: "img-fluid country-thumb" %>
+      <% end %>
+      <div class="card-body">
+        <h5 class="card-title"><%= fc.name %></h5>
+      </div>
     </div>
+
   </div>
 
   <%end%>
 
+  </div>
 </div>
