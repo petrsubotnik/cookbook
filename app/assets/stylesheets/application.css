@@ -62,7 +62,7 @@
 
 /*show page*/
 
-.card2, .card3 {
+.card3 {
   display: inline;
 }
 .card-text {
@@ -80,7 +80,7 @@
   margin: 30px;
 }
 
-.card-title {
+.card-name {
   float: left;
   font-size: 60px;
 }
