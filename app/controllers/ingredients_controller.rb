@@ -12,7 +12,7 @@ class IngredientsController < ApplicationController
         @ingredients = Ingredient.create(quantity: i[:quantity], food_item_id: food_item.id, recipe_id: @recipe.id)
       end
     end
-    
+
     if @ingredients.save
       redirect_to new_direction_path(recipe_id: @recipe.id)
     else
@@ -20,7 +20,19 @@ class IngredientsController < ApplicationController
     end
   end
 
-
+  # def edit
+  #   @ingredients = Ingredient.find(params[:id])
+  # end
+  #
+  # def update
+  #   @ingredients = Ingredient.find(params[:id])
+  #
+  #   if @ingredients.update_attributes(clean_params)
+  #     redirect_to edit_direction_path(recipe_id: @recipe.id)
+  #   else
+  #     render :edit
+  #   end
+  # end
 
   private
 

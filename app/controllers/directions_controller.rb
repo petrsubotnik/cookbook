@@ -17,6 +17,20 @@ class DirectionsController < ApplicationController
     end
   end
 
+  # def edit
+  #   @directions = Direction.find(params[:id])
+  # end
+  #
+  # def update
+  #   @directions = Direction.find(params[:id])
+  #
+  #   if @directions.update_attributes(clean_params)
+  #     redirect_to recipe_path(recipe_id: @recipe.id)
+  #   else
+  #     render :edit
+  #   end
+  # end
+
 
   private
 

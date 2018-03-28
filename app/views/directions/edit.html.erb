@@ -1,6 +1,6 @@
-<h2>Add directions</h2>
+<h2>Edit directions</h2>
 
-<%= form_tag new_direction_path, method: "post" %>
+<%= form_tag edit_direction_path, method: "get" %>
   <input type="hidden" name="recipe_id" value="<%= params[:recipe_id] %>" />
   <div id="direction_inputs">
     <p>

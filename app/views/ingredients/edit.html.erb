@@ -1,6 +1,6 @@
-<h2>Add ingredients</h2>
+<h2>Edit ingredients</h2>
 
-<%= form_tag new_ingredient_path, method: "post" %>
+<%= form_tag edit_ingredient_path, method: "get" %>
     <input type="hidden" name="recipe_id" value="<%= params[:recipe_id] %>" />
     <div id="ingredient_inputs">
       <p>
