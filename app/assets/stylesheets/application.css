@@ -41,12 +41,14 @@
   margin-top: 60px;
   background-color: black;
   text-align: center;
+  position:
 }
 
 .social-media {
   display: inline;
   margin: 20px;
 }
+
 /*index page*/
 
 .img-fluid {
@@ -61,7 +63,7 @@
   text-align: center;
 }
 
-/*show page*/
+/*show food category page*/
 
 .card-heading {
   font-size: 40px;
@@ -103,4 +105,62 @@
 .card-desc {
   width: 650px;
   font-size: 22px;
+}
+
+/*show recipe page*/
+
+.recipe-heading {
+  text-align: center;
+  font-size: 70px;
+  text-shadow: 4px 4px 4px grey;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.soup_image img{
+  height: 600px;
+  width: 900px;
+  display: block;
+  margin: auto auto;
+}
+
+.cooking-recipe-show {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.meal-descr {
+width: 900px;
+display: block;
+margin: auto auto;
+margin-bottom: 30px;
+}
+
+.p-direc-ingred {
+  font-size: 20px;
+}
+
+.ingred-show {
+  width: 300px;
+  float:left; /* add this */
+  /*border: 1px solid red;*/
+  margin-left: 24%;
+}
+.direc-show {
+  width: 500px;
+  /*border: 1px solid green;*/
+  float: left; /* add this */
+  margin-left: 20px;
+}
+
+.wrapper {
+  margin: auto;
+  /*border: 1px solid black;*/
+  overflow: hidden; /* add this to contain floated children */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }

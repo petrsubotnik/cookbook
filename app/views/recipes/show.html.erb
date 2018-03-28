@@ -1,26 +1,48 @@
 <!-- <%= link_to "Edit Recipe", edit_recipe_path %> -->
 
-<h1><%= @recipe.name %></h1>
+<h1 class="recipe-heading"><%= @recipe.name %></h1>
 
 
 <div class="soup_image">
   <%= cl_image_tag @recipe.image %>
 </div>
 
-<p>Preping time: <%= @recipe.preping_time %> minutes</p>
+<div class="cooking-recipe-show" align="center">
+  <div class="card-info1">
+    <p class="card3">Cooking time: <%= @recipe.cooking_time %></p>
+  </div>
+  <div class="card-info1">
+    <p class="card3">Preping time: <%= @recipe.preping_time %></p>
+  </div>
+  <div class="card-info1">
+    <p class="card3">Serves: <%= @recipe.servings %></p>
+  </div>
+  <div class="card-info1">
+    <p class="card3">Difficulty: <%= @recipe.difficulty %></p>
+  </div>
+</div>
+<!-- <p>Preping time: <%= @recipe.preping_time %> minutes</p>
 <p>Cooking time: <%= @recipe.cooking_time %> minutes</p>
 <p>Serves: <%= @recipe.servings %> people</p>
+<p>Difficulty: <%= @recipe.difficulty %></p> -->
 
-<h3>Ingredients</h3>
-  <ul>
-    <% @recipe.ingredients.each do |i| %>
-      <li><%= i.quantity %> <%= i.food_item.name %></li>
-    <% end %>
-  </ul>
+<h4 class="meal-descr"><%= @recipe.description %></h4>
 
-<h3>Directions</h3>
-  <ol>
-    <% @recipe.directions.each do |d| %>
-      <li><%= d.instruction %></li>
-    <% end %>
-  </ol>
+<div class="wrapper">
+  <div class="ingred-show">
+    <h3>Ingredients</h3>
+      <ul>
+        <% @recipe.ingredients.each do |i| %>
+          <p class="p-direc-ingred"><%= i.quantity %> <%= i.food_item.name %></p>
+        <% end %>
+      </ul>
+  </div>
+  <div class="direc-show">
+    <h3>Directions</h3>
+      <ul>
+        <% @recipe.directions.each do |d| %>
+          <p class="p-direc-ingred"><%= d.step %>. <%= d.instruction %></p>
+        <% end %>
+      </ul>
+  </div>
+</div>

@@ -11,7 +11,7 @@
 <div class="card-show-page">
 
 <% @food_category.recipes.each do |fr| %>
-  
+
   <div class="row">
     <%= link_to recipe_path fr do %>
     <%= cl_image_tag fr.image, class: "img-show" %>
@@ -34,10 +34,13 @@
           <div class="card-info1">
             <p class="card3">Serves: <%= fr.servings %></p>
           </div>
+          <div class="card-info1">
+            <p class="card3">Difficulty: <%= fr.difficulty %></p>
+          </div>
         </div>
 
         <div class="card-desc">
-          <p class="card-description"></p><%= fr.description %></h5>
+          <p class="card-description"><%= fr.description %></p>
         </div>
 
     </div>
@@ -47,69 +50,3 @@
   <%end%>
 
 </div>
-
-<!-- <div class="container-fluid">
-
-  <% @food_category.recipes.each do |fr| %>
-
-    <div class="col-md-4">
-      <div class="card-index">
-        <%= link_to recipe_path fr do %>
-        <%= cl_image_tag fr.image, class: "img-fluid1 country-thumb" %>
-        <% end %>
-        <div class="col-md-8 px-3">
-          <div class="card-block px-3">
-            <h2 class="card-title"><%= fr.name %></h2>
-            <div class="card-info1">
-              <h5 class="card2"><p class="card3">Cooking time: </p><%= fr.cooking_time %></h5>
-            </div>
-            <div class="card-info1">
-              <h5 class="card2"><p class="card3">Preping time: </p><%= fr.preping_time %></h5>
-            </div>
-            <div class="card-info1">
-              <h5 class="card2"><p class="card3">Serves: </p><%= fr.servings %></h5>
-            </div>
-            <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-        </div>
-
-
-      </div>
-    </div>
-
-  <%end%>
-
-</div> -->
-
-<!-- <div class="container-fluid">
- <% @food_category.recipes.each do |fr| %>
-
-    <div class="card-recipe">
-
-      <div class="row ">
-        <div class="col-md-4">
-          <%= link_to recipe_path fr do %>
-          <%= cl_image_tag fr.image, class: "img-fluid1 country-thumb" %>
-          <% end %>
-          </div>
-          <div class="col-md-8 px-3">
-            <div class="card-block px-3">
-              <h2 class="card-title"><%= fr.name %></h2>
-              <div class="card-info1">
-                <h5 class="card2"><p class="card3">Cooking time: </p><%= fr.cooking_time %></h5>
-              </div>
-              <div class="card-info1">
-                <h5 class="card2"><p class="card3">Preping time: </p><%= fr.preping_time %></h5>
-              </div>
-              <div class="card-info1">
-                <h5 class="card2"><p class="card3">Serves: </p><%= fr.servings %></h5>
-              </div>
-              <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  <%end%>
-</div> -->
