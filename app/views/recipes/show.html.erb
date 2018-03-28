@@ -41,7 +41,7 @@
     <h3>Directions</h3>
       <ul>
         <% @recipe.directions.each do |d| %>
-          <p class="p-direc-ingred"><%= d.step %>. <%= d.instruction %></p>
+          <p class="p-direc-ingred"><%= d.step %> <%= d.instruction %></p>
         <% end %>
       </ul>
   </div>

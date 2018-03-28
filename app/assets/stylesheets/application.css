@@ -142,21 +142,18 @@ margin-bottom: 30px;
 
 .ingred-show {
   width: 300px;
-  float:left; /* add this */
-  /*border: 1px solid red;*/
+  float:left;
   margin-left: 24%;
 }
 .direc-show {
   width: 500px;
-  /*border: 1px solid green;*/
-  float: left; /* add this */
+  float: left;
   margin-left: 20px;
 }
 
 .wrapper {
   margin: auto;
-  /*border: 1px solid black;*/
-  overflow: hidden; /* add this to contain floated children */
+  overflow: hidden;
 }
 
 ul {
