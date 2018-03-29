@@ -14,6 +14,10 @@
  *= require_self
  */
 
+html {
+  height: 100%;
+}
+
 .navbar {
   height: 60px;
 }
@@ -41,6 +45,9 @@
   margin-top: 60px;
   background-color: black;
   text-align: center;
+  bottom: 0;
+  width: 100%;
+  clear: both;
 }
 
 .social-media {
@@ -85,7 +92,7 @@
 }
 
 .img-show {
-  width: 300px;
+  width: 400px;
   height: 300px;
   margin: 40px;
 }
@@ -97,8 +104,8 @@
 
 .row {
   border: solid 1px black;
-  margin: 20px 180px 20px 180px;
-  background: radial-gradient(white, grey);
+  margin: 20px 160px 20px 160px;
+  background: radial-gradient(white, #bababa);
 }
 
 .card-desc {
