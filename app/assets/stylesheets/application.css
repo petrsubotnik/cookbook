@@ -77,6 +77,10 @@ html {
   color: #2552b9;
 }
 
+.card-cooking {
+  width: 700px;
+}
+
 .card3 {
   display: inline;
   font-size: 24px;
