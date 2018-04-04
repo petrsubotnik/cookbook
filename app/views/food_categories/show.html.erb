@@ -2,15 +2,11 @@
 <h1><%= @food_category.name %></h1>
 
 
-<!-- <ul>
-  <% @food_category.recipes.each do |fr| %>
-    <li><%= link_to fr.name, recipe_path(fr.id) %></li>
-  <%end%>
-</ul> -->
-
 <div class="card-show-page">
 
 <% @food_category.recipes.each do |fr| %>
+
+
 
   <div class="row">
     <%= link_to recipe_path fr do %>

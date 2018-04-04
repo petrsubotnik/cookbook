@@ -1,12 +1,16 @@
 
-<%= form_for(@food_category, :html => {:multipart => true}) do |fc| %>
-  <p>
-    <%= fc.label :name %>
-    <%= fc.text_field :name %>
-  </p>
-  <p>
-    <%= fc.label :image %>
-    <%= fc.text_field :image, placeholder: "paste image url" %>
-  </p>
-  <%= fc.submit %>
-<%end%>
+<div class="food-edit">
+
+  <h1 class="food-edit-heading">Add a new food category</h1>
+
+  <%= form_for(@food_category, :html => {:multipart => true}) do |fc| %>
+    <p>
+      <%= fc.text_field :name , placeholder: "name", :class=> "form-control form-control-lg"%>
+    </p>
+    <p>
+      <%= fc.text_field :image, placeholder: "paste image url", :class=> "form-control form-control-lg" %>
+    </p>
+    <%= fc.submit class: "btn btn-outline-danger btn-lg" %>
+  <%end%>
+
+</div>

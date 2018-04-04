@@ -14,9 +14,12 @@
  *= require_self
  */
 
-html {
-  height: 100%;
-}
+ html {
+    height: 100%;
+ }
+ body {
+    min-height: 100%;
+ }
 
 .navbar {
   height: 60px;
@@ -42,12 +45,11 @@ html {
 }
 
 .footer {
-  margin-top: 60px;
+  position: relative;
   background-color: black;
   text-align: center;
   bottom: 0;
   width: 100%;
-  clear: both;
 }
 
 .social-media {
@@ -61,13 +63,14 @@ html {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 300px;
+  width: 350px;
   height: 300px;
 }
 
 .card-title{
   text-align: center;
 }
+
 
 /*show food category page*/
 
@@ -144,7 +147,7 @@ html {
 width: 900px;
 display: block;
 margin: auto auto;
-margin-bottom: 30px;
+margin-bottom: 40px;
 }
 
 .p-direc-ingred {
@@ -171,4 +174,28 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+/*new category page*/
+
+.form-control {
+  width: 700px;
+  margin: auto;
+  margin-top: 30px;
+  border: solid 1px black;
+}
+
+.btn.btn-outline-danger.btn-lg {
+  margin: auto;
+  display: block;
+}
+
+.food-edit, .recipe-edit {
+  min-height: 630px;
+}
+
+.food-edit-heading {
+  font-size: 60px;
+  text-align: center;
+  margin-top: 40px;
 }
