@@ -1,10 +1,11 @@
 <div class="recipe-edit">
 
+  <h1 class="food-edit-heading">Add a new recipe category</h1>
+
   <%= form_for(@recipe, :html => {:multipart => true}) do |r| %>
 
   <p>
-    <%= r.label "Food Category" %>
-      <select name="recipe[food_category_id]">
+      <select class="custom-select",   name="recipe[food_category_id]">
         <% @food_categories.each do |fc| %>
           <option value="<%= fc.id %>"><%= fc.name %></option>
         <% end %>
@@ -12,26 +13,27 @@
   </p>
 
     <p>
-      <%= r.label :name %>
-      <%= r.text_field :name %>
+      <%= r.text_field :name, placeholder: "recipe name", :class=> "form-control form-control-lg" %>
     </p>
+
     <p>
-      <%= r.label :image %>
-      <%= r.text_field :image, placeholder: "paste image url" %>
+      <%= r.text_field :image, placeholder: "paste image url", :class=> "form-control form-control-lg" %>
     </p>
+
     <p>
-      <%= r.label :cooking_time %>
-      <%= r.text_field :cooking_time, placeholder: "Enter in minutes" %>
+      <%= r.text_field :cooking_time, placeholder: "Enter in minutes", :class=> "form-control form-control-lg" %>
     </p>
+
     <p>
-      <%= r.label :preping_time %>
-      <%= r.text_field :preping_time, placeholder: "Enter in minutes" %>
+      <%= r.text_field :preping_time, placeholder: "Enter in minutes", :class=> "form-control form-control-lg" %>
     </p>
+
     <p>
-      <%= r.label :servings %>
-      <%= r.text_field :servings, placeholder: "Number of people" %>
+      <%= r.text_field :servings, placeholder: "Number of people", :class=> "form-control form-control-lg" %>
     </p>
-    <%= r.submit %>
+
+    <%= r.submit class: "btn btn-outline-danger btn-lg" %>
+
   <%end%>
 
 </div>

@@ -178,11 +178,12 @@ ul {
 
 /*new category page*/
 
-.form-control {
+.form-control, .custom-select {
   width: 700px;
   margin: auto;
   margin-top: 30px;
   border: solid 1px black;
+  display: block;
 }
 
 .btn.btn-outline-danger.btn-lg {
