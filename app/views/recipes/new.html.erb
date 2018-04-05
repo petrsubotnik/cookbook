@@ -5,7 +5,7 @@
   <%= form_for(@recipe, :html => {:multipart => true}) do |r| %>
 
   <p>
-      <select class="custom-select",   name="recipe[food_category_id]">
+      <select class="custom-select custom-select-lg",   name="recipe[food_category_id]">
         <% @food_categories.each do |fc| %>
           <option value="<%= fc.id %>"><%= fc.name %></option>
         <% end %>
@@ -13,11 +13,11 @@
   </p>
 
     <p>
-      <%= r.text_field :name, placeholder: "recipe name", :class=> "form-control form-control-lg" %>
+      <%= r.text_field :name, placeholder: "Enter new recipe name", :class=> "form-control form-control-lg" %>
     </p>
 
     <p>
-      <%= r.text_field :image, placeholder: "paste image url", :class=> "form-control form-control-lg" %>
+      <%= r.text_field :image, placeholder: "Paste image url", :class=> "form-control form-control-lg" %>
     </p>
 
     <p>

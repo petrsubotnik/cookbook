@@ -63,7 +63,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 350px;
+  width: 400px;
   height: 300px;
 }
 
@@ -184,6 +184,7 @@ ul {
   margin-top: 30px;
   border: solid 1px black;
   display: block;
+  background-color: #e4e3e3;
 }
 
 .btn.btn-outline-danger.btn-lg {

@@ -15,7 +15,7 @@ Direction.destroy_all
 f1 = FoodCategory.create(name: "Soup", image: "http://res.cloudinary.com/dsgd2hpbg/image/upload/v1509427537/goulash_soup_rnmb2g.jpg")
 f2 = FoodCategory.create(name: "Pasta", image: "http://res.cloudinary.com/dsgd2hpbg/image/upload/v1509427897/rigatoni_obkv3f.jpg")
 f3 = FoodCategory.create(name: "Meat", image: "http://res.cloudinary.com/dsgd2hpbg/image/upload/v1509427940/goulash_jvel5s.jpg")
-f4 = FoodCategory.create(name: "Seafood & Fish", image: "http://res.cloudinary.com/dsgd2hpbg/image/upload/v1522043699/fishtray_v35fa6.jpg")
+f4 = FoodCategory.create(name: "Seafood & Fish", image: "http://res.cloudinary.com/dsgd2hpbg/image/upload/v1522889019/seafood_f6m8ou.jpg")
 f5 = FoodCategory.create(name: "Light Snacks", image: "http://res.cloudinary.com/dsgd2hpbg/image/upload/v1522043673/Bruschetta_yyy6yu.jpg")
 f6 = FoodCategory.create(name: "Desserts", image: "http://res.cloudinary.com/dsgd2hpbg/image/upload/v1522043662/Bannoffee-Pie_aiop4c.jpg")
 
