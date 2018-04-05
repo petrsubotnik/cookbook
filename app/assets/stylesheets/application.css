@@ -14,6 +14,7 @@
  *= require_self
  */
 
+
  html {
     height: 100%;
  }
@@ -25,11 +26,26 @@
   height: 60px;
 }
 
+.bg-dark {
+    background-color: black!important;
+    text-align: center;
+}
+
+a {
+  font-size: 20px;
+}
+
 .jumbotron {
   background-image: url("https://i.imgur.com/l5Rc7mQ.jpg?1");
   background-size: cover;
   height: 700px;
-  margin-bottom: 70px;
+}
+
+.container-fluid {
+  background-color: #a3a3a3a3;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
 }
 
 .display-4 {
@@ -64,7 +80,6 @@
   text-align: center;
   bottom: 0;
   width: 100%;
-  margin-top: 60px;
 }
 
 .social-media {
@@ -183,6 +198,7 @@ margin-bottom: 40px;
 .wrapper {
   margin: auto;
   overflow: hidden;
+  padding-bottom: 30px;
 }
 
 ul {
@@ -226,4 +242,11 @@ ul {
   margin: 50px auto;
   display: block;
   width: 300px;
+}
+
+
+@media screen and (max-width: 960px){
+  .navbar {
+    text-align: center;
+  }
 }
