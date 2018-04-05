@@ -176,7 +176,7 @@ ul {
     padding: 0;
 }
 
-/*new category page*/
+/*new category and recipe page*/
 
 .form-control, .custom-select {
   width: 700px;
@@ -188,7 +188,7 @@ ul {
 }
 
 .btn.btn-outline-danger.btn-lg {
-  margin: auto;
+  margin: 50px auto;
   display: block;
 }
 
@@ -200,4 +200,15 @@ ul {
   font-size: 60px;
   text-align: center;
   margin-top: 40px;
+}
+
+.add_ingredient {
+  text-align: center;
+  display: block;
+}
+
+.btn.btn-outline-primary.btn-lg {
+  margin: 50px auto;
+  display: block;
+  width: 300px;
 }

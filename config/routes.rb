@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   root "food_categories#index"
   resources :food_categories
+  post "/recipes/search", to: "recipes#search"
+  get "/recipes/search", to: "recipes#results", as: "recipes_results"
   resources :recipes
   resources :ingredients, only: [:new]
   post "/ingredients/new", to: "ingredients#create"

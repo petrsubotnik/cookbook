@@ -43,6 +43,14 @@ class RecipesController < ApplicationController
     end
   end
 
+  # def search
+  #   redirect_to recipes_results_path(search: "#{params[:find]}")
+  # end
+  #
+  # def results
+  #   @search_result = Recipe.joins(:name).where("recipes.name ILIKE ?", "%#{params[:search]}%").distinct
+  # end
+
 
   private
 

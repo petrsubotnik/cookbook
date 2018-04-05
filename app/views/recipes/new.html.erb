@@ -21,15 +21,19 @@
     </p>
 
     <p>
-      <%= r.text_field :cooking_time, placeholder: "Enter in minutes", :class=> "form-control form-control-lg" %>
+      <%= r.text_field :cooking_time, placeholder: "Cooking time - Enter in minutes", :class=> "form-control form-control-lg" %>
     </p>
 
     <p>
-      <%= r.text_field :preping_time, placeholder: "Enter in minutes", :class=> "form-control form-control-lg" %>
+      <%= r.text_field :preping_time, placeholder: "Preping time - Enter in minutes", :class=> "form-control form-control-lg" %>
     </p>
 
     <p>
       <%= r.text_field :servings, placeholder: "Number of people", :class=> "form-control form-control-lg" %>
+    </p>
+
+    <p>
+      <%= r.text_field :description, placeholder: "Decribe your recipe in few words", :class=> "form-control form-control-lg" %>
     </p>
 
     <%= r.submit class: "btn btn-outline-danger btn-lg" %>

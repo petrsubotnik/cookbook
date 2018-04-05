@@ -1,41 +1,37 @@
-<h2>Add ingredients</h2>
+<h1 class="food-edit-heading">Add ingredients</h1>
 
 <%= form_tag new_ingredient_path, method: "post" %>
     <input type="hidden" name="recipe_id" value="<%= params[:recipe_id] %>" />
     <div id="ingredient_inputs">
       <p>
         <p>
-          <label>Quantity</label>
-          <input type="text" name="ingredients[][quantity]" />
+          <input type="text" name="ingredients[][quantity]" class = "form-control form-control-lg" placeholder = "Enter quantity"/>
         </p>
 
         <p>
-          <label>Item</label>
-          <input type="text" name="ingredients[][name]" />
+          <input type="text" name="ingredients[][name]" class = "form-control form-control-lg" placeholder = "Enter ingredient"/>
         </p>
       </p>
     </div>
 
 
-<a href="#" id="add_ingredient">More +</a>
+<a href="#" class = "btn btn-outline-primary btn-lg"  id="add_ingredient" >Click to add more ingredients</a>
  <div id="hidden_inputs" style="display: none;">
    <div id="ingredient_inputs">
      <p>
        <p>
-         <label>Quantity</label>
-         <input type="text" name="ingredients[][quantity]" />
+         <input type="text" name="ingredients[][quantity]" class = "form-control form-control-lg" placeholder = "Enter quantity"/>
        </p>
 
        <p>
-         <label>Item</label>
-         <input type="text" name="ingredients[][name]" />
+         <input type="text" name="ingredients[][name]" class = "form-control form-control-lg" placeholder = "Enter ingredient"/>
        </p>
      </p>
    </div>
  </div>
 
  <p>
-   <input type="submit" value="Next"/>
+   <input type="submit" value="Submit ingredients and proceed to directions" class = "btn btn-outline-danger btn-lg" />
  </p>
 
  <script>
