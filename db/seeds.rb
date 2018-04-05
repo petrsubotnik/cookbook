@@ -13,7 +13,7 @@ Ingredient.destroy_all
 Direction.destroy_all
 
 f1 = FoodCategory.create(name: "Soup", image: "http://res.cloudinary.com/dsgd2hpbg/image/upload/v1509427537/goulash_soup_rnmb2g.jpg")
-f2 = FoodCategory.create(name: "Pasta", image: "http://res.cloudinary.com/dsgd2hpbg/image/upload/v1509427897/rigatoni_obkv3f.jpg")
+f2 = FoodCategory.create(name: "Pasta", image: "http://res.cloudinary.com/dsgd2hpbg/image/upload/v1522904419/rigatoni_uwv0xo.jpg")
 f3 = FoodCategory.create(name: "Meat", image: "http://res.cloudinary.com/dsgd2hpbg/image/upload/v1509427940/goulash_jvel5s.jpg")
 f4 = FoodCategory.create(name: "Seafood & Fish", image: "http://res.cloudinary.com/dsgd2hpbg/image/upload/v1522889019/seafood_f6m8ou.jpg")
 f5 = FoodCategory.create(name: "Light Snacks", image: "http://res.cloudinary.com/dsgd2hpbg/image/upload/v1522043673/Bruschetta_yyy6yu.jpg")
@@ -21,7 +21,7 @@ f6 = FoodCategory.create(name: "Desserts", image: "http://res.cloudinary.com/dsg
 
 r1 = Recipe.create(name: "Goulash soup", image: "http://res.cloudinary.com/dsgd2hpbg/image/upload/v1509427537/goulash_soup_rnmb2g.jpg", food_category_id: f1.id, cooking_time: 20, preping_time: 20, servings: 4, difficulty: "Medium", description: "Enjoy a taste of Eastern Europe in the comfort of your own home with this delicious beef goulash soup recipe which is spicy and warming, perfect for winter.")
 r2 = Recipe.create(name: "Potato soup", image: "http://res.cloudinary.com/dsgd2hpbg/image/upload/v1509427566/potato_soup_u6b75y.jpg", food_category_id: f1.id, cooking_time: 20, preping_time: 20, servings: 4, difficulty: "Easy", description:"Bramboracka is the Queen of all Czech soups and defines the traditional Czech Cuisine. It is a dish which is loaded with treasures from the underground: mushrooms, root vegetable and, of course, the humble potato.")
-r3 = Recipe.create(name: "Oven-baked rigatoni with wild boar salami", image: "http://res.cloudinary.com/dsgd2hpbg/image/upload/v1509427897/rigatoni_obkv3f.jpg", food_category_id: f2.id, cooking_time: 25, preping_time: 30, servings: 6)
+r3 = Recipe.create(name: "Oven-baked rigatoni with wild boar salami", image: "http://res.cloudinary.com/dsgd2hpbg/image/upload/v1522904419/rigatoni_uwv0xo.jpg", food_category_id: f2.id, cooking_time: 25, preping_time: 30, servings: 6)
 r4 = Recipe.create(name: "Beef Goulash", image: "http://res.cloudinary.com/dsgd2hpbg/image/upload/v1509427940/goulash_jvel5s.jpg", food_category_id: f3.id, cooking_time: 60, preping_time: 40, servings: 4)
 
 fi1 = FoodItem.create(name: "beef")
