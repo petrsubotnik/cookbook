@@ -41,8 +41,10 @@ a {
   height: 700px;
 }
 
+
+
 .container-fluid {
-  background-color: #a3a3a3a3;
+  background-color: #a3a3a35c;
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -92,7 +94,7 @@ a {
 .img-fluid {
   display: block;
   margin: 20px auto;
-  width: 400px;
+  width: 350px;
   height: 300px;
 }
 
@@ -223,7 +225,7 @@ ul {
   display: block;
 }
 
-.food-edit, .recipe-edit {
+.food-edit, .recipe-edit, .card-show-page {
   min-height: 630px;
 }
 
@@ -242,11 +244,4 @@ ul {
   margin: 50px auto;
   display: block;
   width: 300px;
-}
-
-
-@media screen and (max-width: 960px){
-  .navbar {
-    text-align: center;
-  }
 }
